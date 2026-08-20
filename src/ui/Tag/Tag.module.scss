@@ -1,0 +1,31 @@
+@use '../../ui/variables.scss' as *;
+
+.tag{
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  padding: 5px 12px;
+  border-radius: 90px;
+}
+
+.light-blue{
+  background-color: $color-blue-light;
+  color: $color-primary;
+}
+
+.red{
+  background-color: $color-pink;
+  color: $color-crimson;
+}
+
+.gray{
+  background-color:$color-gray-red;
+  color: $color-gray;
+}
+
+.blue{
+  background-color: transparent;
+  border: 1.5px solid $color-primary;
+  color:$color-primary;
+}

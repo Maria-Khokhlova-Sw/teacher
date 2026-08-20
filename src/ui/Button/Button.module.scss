@@ -1,0 +1,56 @@
+@use '../../ui/variables.scss' as *;
+
+.btn{
+  padding: 9px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 1.2;
+  text-align: center;
+  border-radius: 90px;
+  font-weight: 550;
+  transition: 0.3s ease;
+  &:disabled{
+    opacity: 0.45;
+    cursor: not-allowed;
+    color: $color-text;
+    border: 1px solid  rgba($color-gray, 0.16);
+    background-color: transparent;
+  }
+}
+
+.primary{
+  background-color: $color-primary;
+  color: white;
+  &:hover:not(:disabled){
+    background-color: $color-accent-light;
+  }
+
+  &:active:not(:disabled){
+    background-color: $color-accent;
+  }
+}
+
+.secondary{
+  background: none;
+  color: $color-text;
+  border: 1px solid $color-gray;
+  &:hover:not(:disabled){
+    background-color: rgba($color-gray, 0.05);
+
+  }
+  &:active:not(:disabled){
+    background-color: rgba($color-gray, 0.1);
+  }
+}
+
+.text{
+  background:none;
+  color: $color-primary;
+  &:hover:not(:disabled){
+    background-color: $color-blue-light;
+  }
+  &:active:not(:disabled){
+    background-color: rgba($color-accent-light, 0.2);
+  }
+}
