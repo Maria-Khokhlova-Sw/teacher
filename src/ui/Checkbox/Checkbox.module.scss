@@ -1,0 +1,45 @@
+@use '../../ui/variables.scss' as *;
+
+.wrap{
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+
+  &:checked + .indicator{
+    background-color: $color-primary;
+    border-color: $color-primary;
+  }
+
+  &:focus-visible + .indicator{
+    outline: 2px solid $color-primary;
+    outline-offset: 2px;
+  }
+}
+
+.indicator{
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 1.5px solid $color-light-gray;
+  background-color: white;
+  transition: 0.2s ease;
+}
+
+.label{
+  font-size: 14px;
+  color: $color-text;
+}

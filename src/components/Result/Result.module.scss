@@ -1,0 +1,58 @@
+@use '../../ui/variables.scss' as *;
+
+.results{
+  background-color:$color-light-gray;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+  width: 1000px;
+  margin-top: 90px;
+}
+
+.retry{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.text{
+  font-size: 20px;
+}
+
+.result{
+  justify-content: space-between;
+  padding-bottom: 5px;
+  border-bottom: 2px solid $color-primary;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header{
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px;
+  display: flex;
+  cursor: pointer;
+}
+
+.block{
+  display: flex;
+  gap: 20px;
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.2s ease;
+  transform: rotate(90deg);
+  font-size: 22px;
+
+}
+
+.arrowOpen {
+  display: inline-block;
+  transition: transform 0.2s ease;
+  transform: rotate(270deg);
+  font-size: 22px;
+}

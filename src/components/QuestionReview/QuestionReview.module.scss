@@ -1,0 +1,46 @@
+@use '../../ui/variables.scss' as *;
+
+
+.correct-selected{
+  color: $color-blue;
+  background:$color-blue-light;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.correct-missed{
+  color: $color-blue;
+  background:$color-blue-light;
+  border: solid 1px $color-blue;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.wrong-selected{
+  color: $color-crimson ;
+  background:$color-pink;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 4px;
+  border: solid 1px $color-crimson;
+}
+
+.block{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.answer{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: flex-start;
+}

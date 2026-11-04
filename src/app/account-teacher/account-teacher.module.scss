@@ -1,0 +1,53 @@
+@use '../../ui/variables.scss' as *;
+
+.wrapper{
+  width: 100%;
+  max-width: 1200px;
+  padding: 90px 60px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.seach{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input{
+  width: 100%;
+  position: relative;
+  &:focus-within .icon{
+    display: none;
+  }
+}
+
+.inputClass{
+  width: 200px;
+  position: relative;
+  &:focus-within .icon{
+    display: none;
+  }
+}
+
+.icon{
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.inputs{
+  display: flex;
+  gap: 20px;
+}
+
+.block{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

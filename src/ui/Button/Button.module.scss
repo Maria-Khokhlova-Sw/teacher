@@ -1,6 +1,7 @@
 @use '../../ui/variables.scss' as *;
 
 .btn{
+  width: fit-content;
   padding: 9px 15px;
   border: none;
   cursor: pointer;

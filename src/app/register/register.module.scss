@@ -1,0 +1,38 @@
+@use '../../ui/variables.scss' as *;
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+  width: 100%;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.title{
+  font-size: 22px;
+  font-weight: 550;
+  color: $color-text;
+  margin-bottom: 8px;
+}
+
+.hint{
+  font-size: 13px;
+  color: $color-gray;
+  text-align: center;
+
+  a{
+    color: $color-primary;
+  }
+}
+
+.error{
+  color: $color-crimson;
+  font-size: 13px;
+}

@@ -39,3 +39,20 @@ export type QuestionResult = {
   questionId: number;
   isCorrect: boolean;
 };
+
+export type Test = {
+    id: number;
+    title: string;
+    time: number;
+    questions: Question[];
+}
+
+type UserRole = 'student' | 'teacher'
+
+export type User = {
+    id: number
+    name: string
+    email: string
+    role: UserRole
+    class: number | null
+}

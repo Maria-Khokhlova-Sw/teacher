@@ -1,0 +1,32 @@
+@use '../../ui/variables.scss' as *;
+
+.wrap{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label{
+  font-size: 12px;
+  color: $color-gray;
+}
+
+.input{
+  border: none;
+  border-bottom: 1px solid $color-light-gray;
+  border-radius: 6px 6px 0 0;
+  background-color: $color-gray-red;
+  padding: 12px 14px;
+  font-size: 14px;
+  font-family: inherit;
+  color: $color-text;
+
+  &::placeholder{
+    color: $color-gray;
+  }
+
+  &:focus{
+    outline: none;
+    border-bottom-color: $color-primary;
+  }
+}

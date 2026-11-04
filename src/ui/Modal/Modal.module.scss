@@ -1,0 +1,33 @@
+@use '../../ui/variables.scss' as *;
+
+.overlay{
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgba(32, 30, 29, 0.45);
+}
+
+.window{
+  width: 100%;
+  max-width: 360px;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: white;
+}
+
+.title{
+  font-size: 18px;
+  font-weight: 550;
+  color: $color-text;
+  margin-bottom: 24px;
+}
+
+.actions{
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}

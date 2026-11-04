@@ -1,0 +1,73 @@
+@use '../../ui/variables.scss' as *;
+
+.wrapper{
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.meta{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progressInfo{
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: $color-gray;
+}
+
+.block{
+  background-color:$color-light-gray;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 10px;
+  width: 1000px;
+}
+
+.answers{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn{
+  font-size: 32px;
+  border: 2px solid $color-primary;
+  padding: 7px;
+  border-radius: 5px;
+  background: $color-light-gray;
+  cursor: pointer;
+  transition: all 0.2s;
+  &:hover{
+    background: $color-blue-light;
+  }
+}
+
+.letters{
+  font-size: 32px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.letters button[data-selected="true"] {
+  background-color: $color-primary;
+  color: white;
+}
+
+.title{
+  font-size: 20px;
+}
+
+.blockBtn{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: end;
+}

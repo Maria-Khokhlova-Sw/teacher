@@ -1,0 +1,29 @@
+@use '../../ui/variables.scss' as *;
+
+.card{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background-color: $color-light-gray;
+  border-radius: 10px;
+}
+
+.label{
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-primary;
+}
+
+.value{
+  font-size: 28px;
+  font-weight: 600;
+  color: $color-text;
+}
+
+.description{
+  font-size: 12px;
+  color: $color-gray;
+}
