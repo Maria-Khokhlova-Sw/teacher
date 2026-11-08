@@ -19,7 +19,7 @@ export default function LoginPage() {
         setError(null)
         try {
             await login(email, password)
-            router.push('/account')
+            router.push('/')
         } catch (err) {
             setError(err instanceof Error ? err.message : 'Не удалось войти')
         }
@@ -28,7 +28,11 @@ export default function LoginPage() {
     return (
         <div className={styles.wrapper}>
             <form className={styles.form} onSubmit={handleSubmit}>
-                <div className={styles.title}>Вход</div>
+                <div className={styles.title}>Вход
+                    <span className={styles.hint}>
+                        <Link href="/restore" className={styles.hint}>Восстановить пароль</Link>
+                    </span>
+                </div>
                 {error && <div className={styles.error}>{error}</div>}
                 <Input
                     label={'Email'}

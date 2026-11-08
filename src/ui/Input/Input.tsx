@@ -6,12 +6,13 @@ type InputProps = {
     type?: 'text' | 'email' | 'password' | 'number',
     value: string,
     onChange: (value: string) => void,
+    variant?: 'label' | 'blue'
 }
 
-export default function Input({label, placeholder, type = 'text', value, onChange}:InputProps) {
+export default function Input({label, placeholder, type = 'text', value, onChange, variant='label'}:InputProps) {
     return (
         <div className={styles.wrap}>
-            {label && <span className={styles.label}>{label}</span>}
+            {label && <span className={`${styles[variant]}`}>{label}</span>}
             <input
                 type={type}
                 className={styles.input}

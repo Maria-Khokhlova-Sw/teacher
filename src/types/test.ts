@@ -45,6 +45,9 @@ export type Test = {
     title: string;
     time: number;
     questions: Question[];
+    userId: number;
+    class: number;
+    isPublished: boolean;
 }
 
 type UserRole = 'student' | 'teacher'

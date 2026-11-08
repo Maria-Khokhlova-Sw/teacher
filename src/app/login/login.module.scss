@@ -1,10 +1,16 @@
 @use '../../ui/variables.scss' as *;
 
 .wrapper{
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  margin-top: 90px;
+  max-width: 600px;
+  padding: 60px;
   display: flex;
   justify-content: center;
-  padding-top: 120px;
-  width: 100%;
+  border: 2px solid $color-primary;
+  border-radius: 6px;
 }
 
 .form{
@@ -13,6 +19,7 @@
   gap: 16px;
   width: 100%;
   max-width: 500px;
+  align-items: center;
 }
 
 .title{
@@ -20,6 +27,9 @@
   font-weight: 550;
   color: $color-text;
   margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .hint{

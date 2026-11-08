@@ -1,0 +1,72 @@
+@use '../../../ui/variables.scss' as *;
+
+.wrapper{
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 90px 60px 60px;
+  display: flex;
+}
+
+.title{
+  font-size: 32px;
+}
+
+.subtitle{
+  color: $color-gray;
+  margin-top: 8px;
+}
+
+.stats{
+  display: flex;
+  gap: 20px;
+}
+
+.sectionTitle{
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.table{
+  display: flex;
+  flex-direction: column;
+  background-color: $color-light-gray;
+  border-radius: 6px 6px 0 0;
+  padding: 20px 30px;
+}
+
+.tableHeader{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: $color-gray;
+  padding-bottom: 12px;
+  border-bottom: 1px solid $color-gray-transparent;
+}
+
+.tableRow{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid $color-gray-transparent;
+
+  &:last-child{
+    border-bottom: none;
+  }
+}
+
+.date{
+  color: $color-gray;
+  font-size: 13px;
+}
+
+.link{
+  color: $color-primary;
+  text-decoration: underline;
+  font-size: 13px;
+  justify-self: end;
+  cursor: pointer;
+}

@@ -1,0 +1,48 @@
+@use '../../ui/variables.scss' as *;
+
+.wrapper{
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  margin-top: 90px;
+  max-width: 600px;
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid $color-primary;
+  border-radius: 6px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 500px;
+  align-items: center;
+}
+
+.title{
+  font-size: 22px;
+  font-weight: 550;
+  color: $color-text;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hint{
+  font-size: 13px;
+  color: $color-gray;
+  text-align: center;
+
+  a{
+    color: $color-primary;
+  }
+}
+
+.error{
+  color: $color-crimson;
+  font-size: 13px;
+}

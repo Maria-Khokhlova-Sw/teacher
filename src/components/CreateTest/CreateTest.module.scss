@@ -1,0 +1,117 @@
+@use '../../ui/variables.scss' as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.questionCard {
+  border: 1px solid $color-accent;
+  border-radius: 6px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.questionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.removeBtn, .smallRemove {
+  background: none;
+  border: none;
+  color: $color-crimson;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.select {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid $color-accent;
+  font-size: 15px;
+}
+
+.optionsBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  & label{
+    font-size: 16px;
+    color: $color-primary;
+  }
+}
+
+.optionRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.letterClickBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.letters {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.letterButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+
+.letter {
+  font-size: 20px;
+  padding: 4px;
+}
+
+.letterBtn {
+  font-size: 20px;
+  padding: 6px 10px;
+  border: 2px solid #90caf9;
+  border-radius: 6px;
+  cursor: pointer;
+
+  &[data-selected="true"] {
+    background: #1976d2;
+    color: white;
+    border-color: #1976d2;
+  }
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.error {
+  color: #c62828;
+  padding: 12px;
+  background: #ffebee;
+  border-radius: 6px 6px 0 0;
+}

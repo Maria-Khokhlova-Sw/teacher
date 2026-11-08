@@ -27,7 +27,7 @@ export  default  function Menu(){
                     {user.role === 'student' ? (
                         <Link href="/account" className={pathname === '/account' ? styles.active : styles.link}>{user.name}</Link>
                     ) : (
-                        <Link href="/account-teacher" className={pathname === '/account-teacher' ? styles.active : styles.link}>{user.name}</Link>
+                        <Link href="/account/teacher" className={pathname === '/account-teacher' ? styles.active : styles.link}>{user.name}</Link>
                     )}
                     <button className={styles.logout} onClick={() => logout()}>Выйти</button>
                 </div>

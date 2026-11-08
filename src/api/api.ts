@@ -23,8 +23,11 @@ async function request<T>(path: string, options: ApiOptions = {}): Promise<T> {
 
     if (!res.ok) {
         const data = await res.json().catch(() => null);
-        throw new Error(data?.message ?? `Ошибка запроса: ${res.status}`);
-    }
+        if (data && typeof data === "object") {
+            throw data;
+        }
+
+        throw new Error(`Ошибка запроса: ${res.status}`);    }
 
     if (res.status === 204) {
         return undefined as T;
